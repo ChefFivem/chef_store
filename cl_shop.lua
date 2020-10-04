@@ -111,5 +111,5 @@ Citizen.CreateThread(function()
             
         end
 end)
-print('By Chef')
+print('By Chef#6502')
 print('https://discord.gg/7fE7vMK')
