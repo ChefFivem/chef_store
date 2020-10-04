@@ -1,5 +1,8 @@
 # Chef Store
 
+## Aide
+si besoin d'aide rejoinnez le discord
+https://discord.gg/7fE7vMK
 
 ## Download & Installation
 
@@ -10,7 +13,7 @@ git clone https://github.com/ChefFivem/chef_store
 ```
 
 ### Manually
-- Download https://github.com/ESX-Org/esx_ambulancejob/archive/master.zip
+- Download https://github.com/ChefFivem/chef_store.git
 - Put it in the `[esx]` directory
 
 ## Installation
