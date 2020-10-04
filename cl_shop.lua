@@ -41,10 +41,10 @@ local Shop_Menu = {
 
         onSelected = function(self, _, btn, CMenu, menuData, currentButton, currentSlt, result)
               if btn.name == "Pain" then
-                    TriggerServerEvent('chef_store:buy', 10, 'pain', 'Pain')
+                    TriggerServerEvent('chef_store:buy', 10, 'bread', 'Pain')
                     print("Achat d'un pain")
               elseif btn.name == "Eau" then
-                TriggerServerEvent('chef_store:buy', 5, 'eau', 'Eau')
+                TriggerServerEvent('chef_store:buy', 5, 'bread', 'Eau')
                 print("Achat d'une bouteille d'eau")
 
 
