@@ -21,4 +21,8 @@ git clone https://github.com/ChefFivem/chef_store
 start chef_core
 ```
 
+## For Modif price ##
+Go to cl_shop.lua
+line 44 and 47
+
 By Chef
