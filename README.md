@@ -13,7 +13,7 @@ git clone https://github.com/ChefFivem/chef_store
 ```
 
 ### Manually
-- Download https://github.com/ChefFivem/chef_store.git
+- Download https://github.com/ChefFivem/chef_store
 - Put it in the `[esx]` directory
 
 ## Installation
