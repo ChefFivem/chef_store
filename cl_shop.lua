@@ -41,10 +41,10 @@ local Shop_Menu = {
 
         onSelected = function(self, _, btn, CMenu, menuData, currentButton, currentSlt, result)
               if btn.name == "Pain" then
-                    TriggerServerEvent('chef_store:buy', 10, 'bread', 'Pain')
+                    TriggerServerEvent('chef_store:buy', 10, 'pain', 'Pain')
                     print("Achat d'un pain")
               elseif btn.name == "Eau" then
-                TriggerServerEvent('chef_store:buy', 5, 'bread', 'Eau')
+                TriggerServerEvent('chef_store:buy', 5, 'eau', 'Eau')
                 print("Achat d'une bouteille d'eau")
 
 
@@ -111,5 +111,37 @@ Citizen.CreateThread(function()
             
         end
 end)
+local blips = {
+    {title="Shop", colour= 2, id= 52, x= 373.875,   y = 325.896,  z = 102.566},
+    {title="Shop", colour= 2, id= 52, x= 2557.458,  y = 382.282,  z = 107.622},
+    {title="Shop", colour= 2, id= 52, x = -3038.939, y = 585.954,  z = 6.908},
+    {title="Shop", colour= 2, id= 52, x = -3241.927, y = 1001.462, z = 11.830},
+    {title="Shop", colour= 2, id= 52, x = 547.431,   y = 2671.710, z = 41.156},
+    {title='Shop', colour= 2, id= 52, x = 1961.464,  y = 3740.672, z = 31.343},
+    {title='Shop', colour= 2, id= 52, x = 2678.916,  y = 3280.671, z = 54.241},
+    {title='Shop', colour= 2, id= 52, x = 1729.216,  y = 6414.131, z = 34.037},
+    {title='Shop', colour= 2, id= 52, x = -48.519,   y = -1757.514, z = 28.421},
+    {title='Shop', colour= 2, id= 52, x = 1163.373,  y = -323.801,  z = 68.205},
+    {title='Shop', colour= 2, id= 52, x = -707.501,  y = -914.260,  z = 18.215},
+    {title='Shop', colour= 2, id= 52, x = -1820.523, y = 792.518,   z = 137.118},
+    {title='Shop', colour= 2, id= 52, x = 1698.388,  y = 4924.404,  z = 41.063},
+    {title='Shop', colour= 2, id= 52, x = 25.740, y = -1347.507, z = 29.49}
+}
+
+Citizen.CreateThread(function()
+
+    for _, info in pairs(blips) do
+      info.blip = AddBlipForCoord(info.x, info.y, info.z)
+      SetBlipSprite(info.blip, info.id)
+      SetBlipDisplay(info.blip, 4)
+      SetBlipScale(info.blip, 0.9)
+      SetBlipColour(info.blip, info.colour)
+      SetBlipAsShortRange(info.blip, true)
+	  BeginTextCommandSetBlipName("STRING")
+      AddTextComponentString(info.title)
+      EndTextCommandSetBlipName(info.blip)
+    end
+end)
+
 print('By Chef#6502')
 print('https://discord.gg/7fE7vMK')
