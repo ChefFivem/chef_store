@@ -25,7 +25,7 @@ git clone https://github.com/ChefFivem/chef_store
 - Add this in your `server.cfg`:
 
 ```
-start chef_core
+start chef_store
 ```
 
 ## For Modif price ##
