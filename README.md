@@ -6,7 +6,7 @@ https://discord.gg/7fE7vMK
 
 ## Site
 le site de ChefFivem
-https://chef-devl.xyz/
+https://chefshop5m.fr/
 
 ## Download & Installation
 
