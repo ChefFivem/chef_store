@@ -1,7 +1,7 @@
 # Chef Store
 Pmenu Shop Fivem
 ## Aide
-si besoin d'aide rejoinnez le discord
+si besoin d'aide join le discord
 https://discord.gg/7fE7vMK
 
 ## Site
